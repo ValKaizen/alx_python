@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 def add(a, b):
     # Perform addition using bitwise operations
     while b != 0:
