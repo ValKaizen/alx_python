@@ -1,7 +1,10 @@
+
 #!/usr/bin/python3
-ef add(a, b):
+def add(a: any
+         b: any):
     # Perform addition using bitwise operations
     while b != 0:
         carry = a & b
-        a = (a ^ b) & 0xFFFFFFFF  # To handle negative numbers in 32-bit integers
+        a = a ^ b
         b = carry << 1
+return a
