@@ -1,6 +1,8 @@
+cat 0-main.py
 #!/usr/bin/python3
-from add_0 import add
+add = __import__('0-sum').add
 if __name__ == "__main__":
-    a = 1
-    b = 2
-    print("{} + {} = {}".format(a, b, add(a, b)))
+    
+print(add(1, 2))
+print(add(98, 0))
+print(add(100, -2))
