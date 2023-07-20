@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-input_string = "Hello, World!"
-reversed_string = reverse_string(input_string)
-print(f"Original string: {input_string}")
-print(f"Reversed string: {reversed_string}")
+def reverse_string(string):
+    reversed_string = ""
+    for char in string:
+        reversed_string = char + reversed_string
+    return reversed_string
