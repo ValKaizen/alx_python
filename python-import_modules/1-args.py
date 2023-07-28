@@ -8,7 +8,7 @@ def print_arguments():
 def print_arguments():
     num_args = len(sys.argv) - 1
     # Print the number of arguments and the appropriate plural/singular form
-    print("{} argument: {}".format("s" if num_args != 1 else "", num_args))
+    print("1 argument:".format("s" if num_args != 1 else "", num_args))
 
     if num_args == 0:
         # If no arguments were passed, print a dot and a new line
