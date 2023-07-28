@@ -2,17 +2,16 @@ def safe_print_division(a, b):
     try:
         result = a / b
     except ZeroDivisionError:
-        print("Cannot divide by zero.")
+        print("Error: Division by zero is not allowed.")
         return None
-    except Exception as e:
-        print("An error occurred:", e)
+    except TypeError:
+        print("Error: Both inputs must be integers.")
         return None
-    finally:
+    else:
         print("Inside result: {}".format(result))
+        return result
+    finally:
+        print("Division operation has been completed.")
 
-    return result
-
-# Test cases
-print(safe_print_division(10, 2))
-print(safe_print_division(5, 0))
-print(safe_print_division(8, 3))
+# Example usage:
+result = safe_print_division(10, 2)
