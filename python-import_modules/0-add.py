@@ -9,7 +9,7 @@ from add_0 import add
 result = add(a, b)
 
 # Print the formatted output
-output ="{}+{} = {}\n".format(a, b, result)
+output ="{} + {} = {}".format(a, b, result)
 
 # Additional code outside the if __name__ == "__main__": block
 #output += "This code will be executed regardless of import or direct execution."
