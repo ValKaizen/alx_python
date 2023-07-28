@@ -11,7 +11,7 @@ def print_arguments():
     else:
         # For each argument, print its position, value, and a new line
         for i, arg in enumerate(sys.argv[1:], 1):
-            print("{}:{}".format(i, arg))
+            print("{}:{}".format(i,arg))
 
 if __name__ == "__main__":
     print_arguments()
