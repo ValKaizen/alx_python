@@ -12,5 +12,5 @@ result = add(a, b)
 output ="{} + {} = {}\n".format(a, b, result)
 
 # Additional code outside the if __name__ == "__main__": block
-output += "This code will be executed regardless of import or direct execution."
+#output += "This code will be executed regardless of import or direct execution."
 print(output)
