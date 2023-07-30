@@ -1,10 +1,23 @@
 def raise_exception_msg(message=""):
-    if not isinstance(message, str):
-        raise TypeError("Message must be a string.")
-    raise NameError(message)
+    if len(message) < 9:
+        raise NameError(message[:9])
+    elif len(message) < 15:
+        raise NameError(message[:15])
+    else:
+        raise NameError(message[0])
 
-# Example usage:
+# Test cases
 try:
-    raise_exception_msg("This is a name exception with a custom message.")
+    raise_exception_msg("ShortMsg")
 except NameError as e:
-    print("Caught exception:", e)
+    print(str(e))
+
+try:
+    raise_exception_msg("MediumMessage")
+except NameError as e:
+    print(str(e))
+
+try:
+    raise_exception_msg("TooLongMessage")
+except NameError as e:
+    print(str(e))

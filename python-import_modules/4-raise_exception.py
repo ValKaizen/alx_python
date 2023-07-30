@@ -1,7 +1,6 @@
 def raise_exception():
-    raise TypeError("This is a type exception.")
-
-# Example usage:
+    #raise TypeError("Exception has been raised")
+# Example usage: 
 try:
     raise_exception()
 except TypeError as e:
