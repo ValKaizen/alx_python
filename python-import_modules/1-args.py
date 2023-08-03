@@ -1,21 +1,14 @@
-import sys
-
-def print_arguments():
-    num_args = len(sys.argv) - 1
-
-    import sys
-
-def print_arguments():
-    num_args = len(sys.argv) - 1
-    # Print the number of arguments and the appropriate plural/singular form
-    print("1 argument:".format("s" if num_args != 1 else "", num_args))
-
-    if num_args == 0:
-        # If no arguments were passed, print a dot and a new line
-        print(".")
-    else:
-        # For each argument, print its position, value, and a new line
-        for i, arg in enumerate(sys.argv[1:], 1):
-            print("{}: {}".format(i, arg))
+#!/usr/bin/python3
+from sys import argv
 if __name__ == "__main__":
-    print_arguments()
+    i = 1
+    if len(argv) == 1:
+        print("{:d} arguments.".format(len(argv) - 1))
+    elif len(argv) == 2:
+        print("{:d} argument:".format(len(argv) - 1))
+        print("{:d}: {:s}".format(i, argv[i]))
+
+    else:
+        print("{:d} arguments:".format(len(argv) - 1))
+        for i in range(1, len(argv)):
+            print("{:d}: {:s}".format(i, argv[i]))
