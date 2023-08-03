@@ -11,7 +11,7 @@ def safe_print_division(a, b):
         print("Inside result: {}".format(result))
         return result
     finally:
-        #if isinstance(a, int) and isinstance(b, int):
-         #   print("{} / {} = {}".format(a, b, result))
+        if isinstance(a, int) and isinstance(b, int):
+         # print("{} / {} = {}".format(a, b, result))
         #else:
             #print("Invalid inputs: {} / {} cannot be calculated.".format(a, b))
