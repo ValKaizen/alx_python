@@ -16,10 +16,4 @@ def safe_print_division(a, b):
         else:
             print("Invalid inputs: {} / {} cannot be calculated.".format(a, b))
         print("Function execution completed.")
-
-# Test cases
-print(safe_print_division(10, 2))
-print(safe_print_division(10, -2))
-print(safe_print_division(0, 2))
-print(safe_print_division(10, 0))
-print(safe_print_division(10, "abc"))
+        
