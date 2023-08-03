@@ -5,8 +5,7 @@ def raise_exception_msg(message=""):
         raise NameError(message[:15])
     else:
         raise NameError(message[0])
-
-# Test cases
+    # Test cases
 try:
     raise_exception_msg("ShortMsg")
 except NameError as e:
