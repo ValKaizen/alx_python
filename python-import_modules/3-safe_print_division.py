@@ -15,5 +15,4 @@ def safe_print_division(a, b):
             print("{} / {} = {}".format(a, b, result))
         else:
             print("Invalid inputs: {} / {} cannot be calculated.".format(a, b))
-        print("Function execution completed.")
-        
+    print
